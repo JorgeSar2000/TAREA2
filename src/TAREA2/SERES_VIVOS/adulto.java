@@ -11,11 +11,11 @@ import TAREA2.Seres_vivos;
  *
  * @author Jorge
  */
-public class adulto extends Seres_vivos{
-    private String nombre, tipo, fecha, mes;
-    private int años, año_nac, dia;
+public class adulto extends Seres_vivos{//extendemos la clase principal
+    private String nombre, tipo, fecha, mes;//creamos atributos de tipo String
+    private int años, año_nac, dia;//creamos atributos de tipo entero
 
-    public adulto(String nombre, String tipo, int año_nac, int dia, String mes) {
+    public adulto(String nombre, String tipo, int año_nac, int dia, String mes) {//constructor de la clase adulto
         this.nombre = nombre;
         this.tipo = tipo;
         this.año_nac = año_nac;
@@ -24,7 +24,7 @@ public class adulto extends Seres_vivos{
     }
 
     @Override
-    public int edad(){
+    public int edad(){//llamamos al metodo abstracto de la clase principal
         edad = 2018 - año_nac;
         return edad;
     }
